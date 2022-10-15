@@ -3,11 +3,13 @@
 #This program will get hours and rate as input from the user and calculate gross pay using python functions.
 import sys
 
+#Singleton for ease of use
 class HighLow:
     def __init__(self):
         self.high = 0
         self.low = 0
         
+#Helper functions        
 def getInt(temp,values):
     while temp != "Done":
         try:
@@ -32,7 +34,8 @@ def getHigh(integer,high):
     
 def get_highLow():
     return HighLow()
-    
+
+#Main execution    
 print( "Enter in a number: " )
 integer = input()
 if(integer == "Done"):
